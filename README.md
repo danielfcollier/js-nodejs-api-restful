@@ -1,4 +1,4 @@
-# RESTful API App
+# REST API App
 
 Requirements: Node.js + Express.js
 
@@ -31,8 +31,8 @@ npm start
 ### With Docker:
 
 ```bash
-docker build -t restful-api .
-docker run -m 512m --memory-reservation=256m -p 3000:3000 restful-api
+docker build -t rest-api .
+docker run -m 512m --memory-reservation=256m -p 3000:3000 rest-api
 ```
 
 ## Run Tests
