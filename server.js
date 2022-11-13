@@ -1,8 +1,8 @@
 const express = require('express');
 
-const app = express();
+const server = express();
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+server.use(express.json());
+server.use(express.urlencoded({ extended: false }));
 
-module.exports = app;
+module.exports = server;
