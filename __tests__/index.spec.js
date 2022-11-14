@@ -3,7 +3,7 @@ const postEvent = require('../src/event/post');
 const postReset = require('../src/reset/post');
 
 describe('Specification to work with a local database file', () => {
-  test('/reset - Reset state before starting testsK', async () => {
+  test('/reset - Reset state before starting tests', async () => {
     const mockResponse = () => {
       const res = {};
       res.status = jest.fn().mockReturnValue(res);
