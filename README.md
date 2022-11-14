@@ -31,7 +31,7 @@ npm start
 ### With Docker:
 
 ```bash
-docker build -t rest-api .
+docker build -t api-rest .
 docker run -m 512m --memory-reservation=256m -p 3000:3000 api-rest
 ```
 
