@@ -32,7 +32,7 @@ npm start
 
 ```bash
 docker build -t rest-api .
-docker run -m 512m --memory-reservation=256m -p 3000:3000 rest-api
+docker run -m 512m --memory-reservation=256m -p 3000:3000 api-rest
 ```
 
 ## Run Tests
