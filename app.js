@@ -1,15 +1,16 @@
 const server = require('./server');
 
-const getBalance = require('./src/balance/get');
-const postReset = require('./src/reset/post');
-const postReset = require('./src/reset/post');
+const port = process.env.PORT || '3000';
 
-const port = 3000;
+const start = () => {
+  try {
+    server.listen(port, () => {
+      console.log(`API running at http://localhost:${port}`);
+    });
+  } catch (err) {
+    console.error(err);
+    process.exit();
+  }
+};
 
-server.get('/balance', getBalance);
-server.post('/event', postEvent);
-server.post('/reset', postReset);
-
-server.listen(port, () => {
-  console.log(`Example server listening on port ${port}`);
-});
+module.exports = start;
