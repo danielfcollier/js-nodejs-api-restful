@@ -31,8 +31,8 @@ npm start
 ### With Docker:
 
 ```bash
-docker build -t rest-api .
-docker run -m 512m --memory-reservation=256m -p 3000:3000 rest-api
+docker build -t api-rest .
+docker run -m 512m --memory-reservation=256m -p 3000:3000 api-rest
 ```
 
 ## Run Tests
@@ -50,7 +50,7 @@ Tests are configured to run on multiple OS and Node.js versions to make sure the
 #### Test locally with `act`
 
 ```bash
-act -a tests
+act -j tests
 ```
 
 ### Deployment to Production Branch
