@@ -14,7 +14,7 @@ describe('Specification to work with a local database file', () => {
   });
 
   test('/balance - Get balance for non-existing account', async () => {
-    const endpoint = '/balance';
+    const endpoint = '/balance?account_id=1234';
     const expect = {
       status: 404,
       content: '0',
